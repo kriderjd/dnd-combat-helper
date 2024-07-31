@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Combat Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body class="std-background">
+    <div class="header">
+        <div>
+            <h1 class="Title">Damage Calculator</h1>
+        </div>
+    </div >
+    <div class="body">
+        <div class="container-row">
+            <!--Attack Selection-->
+            <div class="container-column">
+                <!--Basic Attacks-->
+                <h2 class="subheader">Basic Attack</h2>
+                <div class="container-row">
+                    <button class="attack-button" id="pactBlade">Pact Blade</button>
+                    <button class="attack-button" id="eldBlast">Eldritch Blast</button>
+                </div>
+                <!--Spells-->
+                <h2 class="subheader">Spell Info</h2>
+                <div class="container-row">
+                    <a href="./spellInfo.html">
+                        <button id="spellInfo">Spell Info</button>
+                    </a>
+                </div>
+                <h2 class="subheader">Attack Spell List</h2>
+                <div class="grid-container">
+                    <div class="spellItem">
+                        <button class="attack-button" id="hellishRebuke">Hellish Rebuke</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="vampiricTouch">Vampiric Touch</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="eldritchSmite">Eldritch Smite</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="banishingSmite">Banishing Smite</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="coneOfCold">Cone of Cold</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="crownOfStars">Crown of Stars</button>
+                    </div>
+                    <div class="spellItem">
+                        <button class="attack-button" id="shapechange">Shapechange</button>
+                    </div>
+                </div>
+            </div>
+            <!--Attack Roll Item-->
+            <div class="item">
+                <h2 id="attackHeader" class="subheader">Click Button to Roll for Attacks</h2>
+                <button id="btnAttack">Attack!</button>
+                <div class="container-column">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance0"></p>
+                        <P class="hitDmg" id="damage0"></P>
+                    </div>
+                    <hr id="divider0">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance1"></p>
+                        <P class="hitDmg" id="damage1"></P>
+                    </div>
+                    <hr id="divider1">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance2"></p>
+                        <P class="hitDmg" id="damage2"></P>
+                    </div>
+                    <hr id="divider2">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance3"></p>
+                        <P class="hitDmg" id="damage3"></P>
+                    </div>
+                    <hr id="divider3">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance4"></p>
+                        <P class="hitDmg" id="damage4"></P>
+                    </div>
+                    <hr id="divider4">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance5"></p>
+                        <P class="hitDmg" id="damage5"></p>
+                    </div>
+                    <hr id="divider5">
+                    <div class="container-row">
+                        <p class="hitText" id="hitChance6"></p>
+                        <P class="hitDmg" id="damage6"></p>
+                    </div>
+                </div>
+            </div>
+            <!--Image Item-->
+            <div class="item">
+                <img class = "dice" src="./images/dice-d20-svgrepo-com.png" alt="Dice Logo" height="350">
+            </div>
+        </div>
+    </div>
+    <footer>@kriderjd 2024</footer>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

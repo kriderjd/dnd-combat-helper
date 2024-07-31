@@ -1,0 +1,169 @@
+.container-column {
+    flex-direction: column;
+    gap: 20px;
+}
+.container-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+}
+
+.grid-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Arvo", cursive;
+    color: #d1d7e0;
+    padding: 20px;
+    align-items: center;
+}
+
+footer {
+    background-color: #1d1a41;
+    color: #d1d7e0;
+    font-family: "Arvo", cursive;
+    margin: 10px;
+    padding: 10px;
+}
+.card {
+    background-color: #4c495e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #1d1a41;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-subheader {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p.description{
+    text-align: left;
+}
+
+.gradient-background {
+    background-image: linear-gradient(180deg,  #2d283e, #201447, #431481, #2c5238);
+    background-size: 100%;
+    animation: gradient-animation 9s ease infinite;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.std-background {
+    background-color: #201447
+}
+
+@keyframes gradient-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    text-align: center;
+    font-family: "Arvo", cursive;
+    color: #802BB1;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px #4c459d;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Arvo", cursive;
+    color: #d1d7e0;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+}
+
+button {
+    font-family: "Arvo", cursive;
+    color: #d1d7e0;
+    background-color: #4c495e;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+p {
+    font-size: larger;
+}
+
+hr {
+    border-top: 3px solid #4c495e;
+    visibility: hidden;
+}
+@media (max-width: 1250px) {
+    .container-row {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .container-column {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px #4c459d;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    .body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: "Arvo", cursive;
+        color: #d1d7e0;
+        padding: 20px;
+    }
+    
+    body {
+        margin-bottom: 100%;
+    }
+
+    .dice {
+        margin-top: 20px;
+        height: 250px;
+    }
+    button {
+        font-family: "Arvo", cursive;
+        color: #d1d7e0;
+        background-color: #4c495e;
+        border-radius: 4px;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+}
