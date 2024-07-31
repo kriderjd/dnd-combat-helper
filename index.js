@@ -15,7 +15,7 @@ function selectAttack(attackID){
             document.getElementById("attackHeader").textContent = "Eldritch Blast Ready";
             break;
         case "hellishRebuke":
-            //var spellReadyAudio = Audio("./sounds/spellcharge.wav");
+            //var spellReadyAudio = Audio("./spellcharge.wav");
             //spellReadyAudio.play();
             document.getElementById("attackHeader").textContent = "Hellish Rebuke Ready";
             break;
@@ -57,7 +57,7 @@ function selectAttack(attackID){
 
 
 function basicAttack() {
-    var slashAudio = new Audio("./sounds/slash.mp3");
+    var slashAudio = new Audio("slash.mp3");
     slashAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -96,7 +96,7 @@ function basicAttack() {
 }
 
 function eldritchBlast(){
-    var blastAudio = new Audio("./sounds/eldritchblast.wav");
+    var blastAudio = new Audio("eldritchblast.wav");
     blastAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -135,7 +135,7 @@ function eldritchBlast(){
 }
 
 function marilithAttack() {
-    var shapeChangeAudio = new Audio("./sounds/Shapechange.wav");
+    var shapeChangeAudio = new Audio("Shapechange.wav");
     shapeChangeAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -205,7 +205,7 @@ function marilithAttack() {
 }
 
 function hellishRebuke() {
-    var fireAudio = new Audio("./sounds/fireattack.wav");
+    var fireAudio = new Audio("fireattack.wav");
     fireAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -228,7 +228,7 @@ function hellishRebuke() {
 }
 
 function vampiricTouch() {
-    var vampAudio = new Audio("./sounds/vamptouch.mp3");
+    var vampAudio = new Audio("vamptouch.mp3");
     vampAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -264,7 +264,7 @@ function vampiricTouch() {
 }
 
 function eldritchSmite() {
-    var smiteAudio = new Audio("./sounds/smite.mp3");
+    var smiteAudio = new Audio("smite.mp3");
     smiteAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -287,7 +287,7 @@ function eldritchSmite() {
 }
 
 function banishingSmite() {
-    var banishAudio = new Audio("./sounds/banish.wav");
+    var banishAudio = new Audio("banish.wav");
     banishAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -310,7 +310,7 @@ function banishingSmite() {
 }
 
 function coneOfCold() {
-    var iceAudio = new Audio("./sounds/icespell.wav");
+    var iceAudio = new Audio("icespell.wav");
     iceAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
@@ -333,7 +333,7 @@ function coneOfCold() {
 }
 
 function crownOfStars(){
-    var crownStarsAudio = new Audio("./sounds/crownstars.mp3");
+    var crownStarsAudio = new Audio("crownstars.mp3");
     crownStarsAudio.play();
     const hrElements = document.querySelectorAll("hr");
     hrElements.forEach(function(hr){
